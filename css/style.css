@@ -17,6 +17,7 @@ a {
 
 img {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 /* GRID GERAL */
@@ -85,21 +86,36 @@ img {
   padding: 10px;
   box-shadow: 5px 5px 15px rgba(0,0,0,.5);
   transition: .1s ease-out;
+  border-radius: 5px;
 }
 
 .sidenav li a:hover{
   background: #B07DFB ;
 }
 
-
+/*CONTENT */
 .content {
   grid-area: content;
 }
 
+/*SIDENAV */
 .anuncios {
   grid-area: anuncios;
+  display: grid;
+  background: #fafbfc;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
 
+/*FOOTER */
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #B07DFB);;
+}
+
+.footer p{
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
